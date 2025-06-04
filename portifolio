@@ -1,91 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio de Fernanda</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    .avatar {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-    }
-    .badge {
-      font-size: 1rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Ísis Zanardi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
+
 <body>
+  <header class="container text-center my-5">
+    <img src="img/avatar.png" alt="Foto de perfil de Ísis" class="rounded-circle mb-3" width="150" height="150">
+    <h1>Ísis Zanardi</h1>
+    <p class="lead">Estudante de programação web e entusiasta da tecnologia.</p>
+  </header>
 
-  <!-- Cabeçalho -->
-  <section class="bg-white text-center py-5 shadow-sm">
-    <img src="img/avatar-perfil.png" alt="Foto de Fernanda" class="avatar rounded-circle mb-3">
-    <h1 class="fw-bold">Fernanda</h1>
-    <p class="lead">Engenheira de Computação & Pedagoga</p>
-    <p class="mx-auto" style="max-width: 600px;">
-      Apaixonada por educação e tecnologia. Ensino programação e pensamento computacional para estudantes do Ensino Fundamental e Médio.
-    </p>
-    <div class="d-flex justify-content-center gap-2 flex-wrap mt-3">
-      <span class="badge bg-primary">HTML</span>
-      <span class="badge bg-success">CSS</span>
-      <span class="badge bg-warning text-dark">JavaScript</span>
-      <span class="badge bg-info text-dark">Scratch</span>
-    </div>
-  </section>
+  <main class="container">
+    <section class="mb-5">
+      <h2>Sobre mim</h2>
+      <p>Sou estudante apaixonada por tecnologia e desenvolvimento web. Estou aprendendo HTML, CSS e JavaScript, e gosto de criar projetos que misturam criatividade e conhecimento técnico. Aqui estão alguns dos meus trabalhos:</p>
+    </section>
 
-  <!-- Projetos -->
-  <main class="container py-5">
-    <h2 class="text-center mb-4">Projetos em Destaque</h2>
-    <div class="row g-4">
-
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/projeto1.png" class="card-img-top" alt="Projeto 1">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Jogo da Memória</h5>
-            <p class="card-text">Um jogo interativo para crianças aprenderem lógica e memorização com JavaScript.</p>
-            <a href="#" class="btn btn-outline-primary mt-auto">Ver Projeto</a>
+    <section>
+      <h2>Meus Projetos</h2>
+      <div class="row">
+        <!-- Projeto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="img/projeto1.png" class="card-img-top" alt="Projeto 1">
+            <div class="card-body">
+              <h5 class="card-title">Jogo da Adivinhação</h5>
+              <p class="card-text">Um jogo simples de adivinhar números com HTML, CSS e JavaScript. Ideal para praticar lógica de programação.</p>
+              <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Ver detalhes</button>
+            </div>
+          </div>
+        </div>
+        <!-- Projeto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="img/projeto2.png" class="card-img-top" alt="Projeto 2">
+            <div class="card-body">
+              <h5 class="card-title">Página de Receitas</h5>
+              <p class="card-text">Uma página de receitas com layout responsivo. Desenvolvido para treinar HTML semântico e estilização com CSS.</p>
+              <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Ver detalhes</button>
+            </div>
+          </div>
+        </div>
+        <!-- Projeto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="img/projeto3.png" class="card-img-top" alt="Projeto 3">
+            <div class="card-body">
+              <h5 class="card-title">Quiz de Astronomia</h5>
+              <p class="card-text">Um quiz interativo sobre planetas, desenvolvido com JavaScript. Projeto ideal para fixar manipulação de eventos e DOM.</p>
+              <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Ver detalhes</button>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/projeto2.png" class="card-img-top" alt="Projeto 2">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Quiz de Ciências</h5>
-            <p class="card-text">Aplicativo com perguntas de múltipla escolha para revisar conteúdos escolares.</p>
-            <a href="#" class="btn btn-outline-primary mt-auto">Ver Projeto</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/projeto3.png" class="card-img-top" alt="Projeto 3">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Página Pessoal</h5>
-            <p class="card-text">Exemplo de página feita com HTML e CSS para apresentar o currículo de forma criativa.</p>
-            <a href="#" class="btn btn-outline-primary mt-auto">Ver Projeto</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer class="text-center bg-dark text-white py-4">
-    <p class="mb-0">© 2025 Fernanda - Todos os direitos reservados.</p>
+  <!-- Modais -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Jogo da Adivinhação</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Esse projeto foi feito com JavaScript puro. A pessoa joga tentando adivinhar um número aleatório entre 1 e 100. Serve para treinar estruturas de repetição, condições e manipulação do DOM.</p>
+          <img src="img/projeto1.png" class="img-fluid" alt="Jogo da Adivinhação">
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline-primary">Ver projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Página de Receitas</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Essa página apresenta receitas simples com uma estrutura organizada e responsiva. Utilizei listas, imagens e tipografia personalizada para deixar o conteúdo acessível e agradável.</p>
+          <img src="img/projeto2.png" class="img-fluid" alt="Página de Receitas">
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline-primary">Ver projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Quiz de Astronomia</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Este quiz contém perguntas sobre o sistema solar. Com JavaScript, consigo validar respostas e exibir a pontuação final. O design é colorido e adaptado para dispositivos móveis.</p>
+          <img src="img/projeto3.png" class="img-fluid" alt="Quiz de Astronomia">
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline-primary">Ver projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container text-center mt-5 py-4 border-top">
+    <p>Ísis Zanardi &copy; 2025</p>
+    <a href="https://github.com/seuusuario" class="me-2"><i class="bi bi-github"></i> GitHub</a>
+    <a href="mailto:isis@email.com"><i class="bi bi-envelope"></i> Email</a>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
